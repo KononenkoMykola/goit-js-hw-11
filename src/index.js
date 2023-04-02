@@ -50,7 +50,7 @@ async function onSearch(event) {
   if(collection.totalHits > newsApiService.per_page) {
     LoadMoreBtnActiv();
     counterActive();
-    counter.innerHTML = `We found more for you ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  зображень`;
+    counter.innerHTML = `We found more for you ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  images`;
   } 
 
   if(collection.totalHits < newsApiService.per_page) {
@@ -76,7 +76,7 @@ async function onLoadMore() {
      
   if((collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)) > 0) {
     counterActive();
-    counter.innerHTML = `We found more for you ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  зображень`;
+    counter.innerHTML = `We found more for you ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  images`;
   }
 }
 
