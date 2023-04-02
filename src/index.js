@@ -76,7 +76,7 @@ async function onLoadMore() {
      
   if((collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)) > 0) {
     counterActive();
-    counter.innerHTML = `Ми знайшли для вас ще ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  зображень`;
+    counter.innerHTML = `We found more for you ${collection.totalHits - newsApiService.per_page * (newsApiService.page - 1)}  зображень`;
   }
 }
 
